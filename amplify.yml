@@ -3,12 +3,13 @@ frontend:
   phases:
     preBuild:
       commands:
+        - cd Main_Project/zero-waste-connect-share-main
         - npm install
     build:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: dist
+    baseDirectory: Main_Project/zero-waste-connect-share-main/dist
     files:
       - '**/*'
   cache:
